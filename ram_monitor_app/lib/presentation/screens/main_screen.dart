@@ -8,16 +8,20 @@ class MainScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final provider = context.watch<MainProvider>();
+    final ramInfo = provider.ramInfo;
     return Scaffold(
       body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Text("Total: ${provider.ramInfo?.total}"),
-            Text("Free: ${provider.ramInfo?.free}"),
-            Text("Used: ${provider.ramInfo?.used}"),
-          ],
-        ),
+        child: (ramInfo == null)
+            ? CircularProgressIndicator()
+            : Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text("Total: ${ramInfo.total} GB"),
+                  Text("Free: ${ramInfo.free} GB"),
+                  Text("Used: ${ramInfo.used} GB"),
+                  Text("Percentage: ${ramInfo.getUsedPercentage()}"),
+                ],
+              ),
       ),
     );
   }

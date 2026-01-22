@@ -39,7 +39,7 @@ class MainApp extends StatelessWidget {
         ChangeNotifierProvider(
           create: (context) => MainProvider(
             repository: RamRepositoryImpl(datasource: CppDatasource()),
-          )..loadRamInfo(),
+          )..monitoringRam(),
         ),
       ],
       child: MaterialApp(

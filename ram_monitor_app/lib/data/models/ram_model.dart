@@ -8,6 +8,9 @@ class RamModel {
   RamModel({required this.total, required this.free, required this.used});
 
   RamEntity toRamEntity() {
-    return RamEntity(total: total, free: free, used: used);
+    final String totalGB = (total / 1024 / 1024).toStringAsFixed(2);
+    final String freeGB = (free / 1024 / 1024).toStringAsFixed(2);
+    final String usedGB = (used / 1024 / 1024).toStringAsFixed(2);
+    return RamEntity(total: totalGB, free: freeGB, used: usedGB);
   }
 }
