@@ -223,4 +223,5 @@ ram_cpp_library
  /usr/lib/libm.so.6
  /usr/lib/libmvec.so.1
  /home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build/CMakeFiles/ram_cpp_library.dir/main.cpp.o
+ /home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build/libram_manager.so
 

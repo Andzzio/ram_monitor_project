@@ -220,8 +220,11 @@ ram_cpp_library: /usr/lib/Scrt1.o \
   /usr/lib/libc_nonshared.a \
   /usr/lib/libm.so.6 \
   /usr/lib/libmvec.so.1 \
-  CMakeFiles/ram_cpp_library.dir/main.cpp.o
+  CMakeFiles/ram_cpp_library.dir/main.cpp.o \
+  libram_manager.so
 
+
+libram_manager.so:
 
 /usr/lib/libm.so.6:
 
