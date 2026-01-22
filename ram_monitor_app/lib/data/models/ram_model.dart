@@ -1,9 +1,9 @@
 import 'package:ram_monitor_app/domain/entities/ram_entity.dart';
 
 class RamModel {
-  final double total;
-  final double free;
-  final double used;
+  final int total;
+  final int free;
+  final int used;
 
   RamModel({required this.total, required this.free, required this.used});
 

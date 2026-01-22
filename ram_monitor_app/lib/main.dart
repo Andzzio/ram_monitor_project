@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:ram_monitor_app/config/themes/custom_theme.dart';
+import 'package:ram_monitor_app/data/datasources/cpp_datasource.dart';
+import 'package:ram_monitor_app/data/repositories/ram_repository_impl.dart';
 import 'package:ram_monitor_app/presentation/providers/main_provider.dart';
 import 'package:ram_monitor_app/presentation/screens/main_screen.dart';
 import 'package:window_manager/window_manager.dart';
@@ -33,7 +35,13 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MultiProvider(
-      providers: [ChangeNotifierProvider(create: (context) => MainProvider())],
+      providers: [
+        ChangeNotifierProvider(
+          create: (context) => MainProvider(
+            repository: RamRepositoryImpl(datasource: CppDatasource()),
+          )..loadRamInfo(),
+        ),
+      ],
       child: MaterialApp(
         theme: CustomTheme().getTheme(),
         debugShowCheckedModeBanner: false,

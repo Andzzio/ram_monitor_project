@@ -13,9 +13,9 @@ class MainScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Total: ${provider.nlib.get_ram_info().total}"),
-            Text("Free: ${provider.nlib.get_ram_info().free}"),
-            Text("Used: ${provider.nlib.get_ram_info().used}"),
+            Text("Total: ${provider.ramInfo?.total}"),
+            Text("Free: ${provider.ramInfo?.free}"),
+            Text("Used: ${provider.ramInfo?.used}"),
           ],
         ),
       ),
