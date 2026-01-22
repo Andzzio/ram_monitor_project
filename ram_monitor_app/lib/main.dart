@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:ram_monitor_app/config/themes/custom_theme.dart';
 import 'package:ram_monitor_app/presentation/providers/main_provider.dart';
 import 'package:ram_monitor_app/presentation/screens/main_screen.dart';
 import 'package:window_manager/window_manager.dart';
@@ -33,8 +34,10 @@ class MainApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MultiProvider(
       providers: [ChangeNotifierProvider(create: (context) => MainProvider())],
-      child: const MaterialApp(
+      child: MaterialApp(
+        theme: CustomTheme().getTheme(),
         debugShowCheckedModeBanner: false,
+        // themeMode: ThemeMode.dark,
         home: MainScreen(),
       ),
     );
