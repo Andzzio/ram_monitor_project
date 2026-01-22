@@ -1,0 +1,4 @@
+/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build/CMakeFiles/ram_manager.dir
+/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build/CMakeFiles/ram_cpp_library.dir
+/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build/CMakeFiles/edit_cache.dir
+/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build/CMakeFiles/rebuild_cache.dir

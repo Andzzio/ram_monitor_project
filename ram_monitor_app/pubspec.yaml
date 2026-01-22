@@ -1,0 +1,28 @@
+name: ram_monitor_app
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.5+1
+  window_manager: ^0.5.1
+
+dev_dependencies:
+  ffigen: ^20.1.1
+  flutter_lints: ^6.0.0
+  flutter_test:
+    sdk: flutter
+
+ffigen:
+  name: "RamMonitor"
+  output: lib/data/ram_monitor.dart
+  headers:
+    entry-points: [../cpp_library/modules/ram_manager.h]
+
+flutter:
+  uses-material-design: true

@@ -1,0 +1,14 @@
+[
+{
+  "directory": "/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build",
+  "command": "/usr/bin/c++ -Dram_manager_EXPORTS  -g -fPIC -o CMakeFiles/ram_manager.dir/ram_manager.cpp.o -c /home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/ram_manager.cpp",
+  "file": "/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/ram_manager.cpp",
+  "output": "CMakeFiles/ram_manager.dir/ram_manager.cpp.o"
+},
+{
+  "directory": "/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build",
+  "command": "/usr/bin/c++   -g -o CMakeFiles/ram_cpp_library.dir/main.cpp.o -c /home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/main.cpp",
+  "file": "/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/main.cpp",
+  "output": "CMakeFiles/ram_cpp_library.dir/main.cpp.o"
+}
+]

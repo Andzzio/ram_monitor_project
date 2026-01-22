@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -Wl,--dependency-file=CMakeFiles/ram_cpp_library.dir/link.d CMakeFiles/ram_cpp_library.dir/main.cpp.o -o ram_cpp_library  -Wl,-rpath,/home/andzzio/Documentos/proyectos/DartPractices/Flutter1/ram_monitor_project/cpp_library/build libram_manager.so

@@ -1,0 +1,1 @@
+/usr/bin/c++ -fPIC -g -shared -Wl,--dependency-file=CMakeFiles/ram_manager.dir/link.d -Wl,-soname,libram_manager.so -o libram_manager.so CMakeFiles/ram_manager.dir/ram_manager.cpp.o
