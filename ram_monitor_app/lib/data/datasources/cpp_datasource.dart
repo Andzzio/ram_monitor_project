@@ -10,10 +10,11 @@ class CppDatasource implements Datasource {
     final RamMonitor nlib = RamMonitor(
       DynamicLibrary.open("libram_manager.so"),
     );
+    final ramInfo = nlib.get_ram_info();
     final RamModel ramModel = RamModel(
-      total: nlib.get_ram_info().total,
-      free: nlib.get_ram_info().free,
-      used: nlib.get_ram_info().used,
+      total: ramInfo.total,
+      free: ramInfo.free,
+      used: ramInfo.used,
     );
     return ramModel.toRamEntity();
   }
