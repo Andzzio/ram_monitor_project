@@ -157,7 +157,7 @@ graph LR
     B -->|getRamInfo| C[RamRepository]
     C -->|getRamInfo| D[CppDatasource]
     D -->|FFI Call| E[libram_manager.so]
-    E -->|read| F[/proc/meminfo]
+    E -->|read| F["/proc/meminfo"]
     F -->|RamInfo| E
     E -->|struct| D
     D -->|RamModel| C
