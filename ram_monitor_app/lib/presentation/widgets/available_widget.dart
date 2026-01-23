@@ -36,7 +36,7 @@ class AvailableWidget extends StatelessWidget {
               ),
               Spacer(),
               LinearProgressIndicator(
-                value: double.parse(ramInfo.getUsedPercentage()) / 100,
+                value: double.parse(ramInfo.free) / double.parse(ramInfo.total),
                 color: Color(0xFF17B880),
                 borderRadius: BorderRadius.circular(10),
                 backgroundColor: Color(0xFF232D3D),
