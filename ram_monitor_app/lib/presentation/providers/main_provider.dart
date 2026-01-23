@@ -11,6 +11,11 @@ class MainProvider extends ChangeNotifier {
 
   MainProvider({required this.repository});
 
+  void loadRamInfo() async {
+    ramInfo = await repository.getRamInfo();
+    notifyListeners();
+  }
+
   void monitoringRam() {
     _timer = Timer.periodic(Duration(milliseconds: 500), (timer) async {
       ramInfo = await repository.getRamInfo();

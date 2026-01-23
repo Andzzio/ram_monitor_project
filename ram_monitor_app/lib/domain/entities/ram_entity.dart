@@ -7,6 +7,6 @@ class RamEntity {
 
   String getUsedPercentage() {
     final double value = (double.parse(used) / double.parse(total)) * 100;
-    return "${value.toStringAsFixed(2)} %";
+    return value.toStringAsFixed(0);
   }
 }

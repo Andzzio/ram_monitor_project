@@ -37,9 +37,12 @@ class MainApp extends StatelessWidget {
     return MultiProvider(
       providers: [
         ChangeNotifierProvider(
-          create: (context) => MainProvider(
-            repository: RamRepositoryImpl(datasource: CppDatasource()),
-          )..monitoringRam(),
+          create: (context) =>
+              MainProvider(
+                  repository: RamRepositoryImpl(datasource: CppDatasource()),
+                )
+                ..loadRamInfo()
+                ..monitoringRam(),
         ),
       ],
       child: MaterialApp(
